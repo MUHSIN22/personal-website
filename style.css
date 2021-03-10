@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,200;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* header styling */
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background-color: red;
+    min-height: 8vh;
+    position: absolute;
+}
+header ul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 ;
+
+}
+header ul li{
+    list-style: none;
+    margin-right: 2em;
+}
+header ul li a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #F3CA20;
+    transition: 0.7s ease-in-out;
+    font-size: large;
+}
+header ul li a:hover{
+    color: #ffffff;
+    transform: scale(2,2);
+}
+.toggle-icon  {
+    display: none;
+}
+.toggle-icon div {
+    width: 25px;
+    height: 4px;
+    background-color: #F3CA20;
+    margin: 4px;
+    border-radius: 3px;
+}
+
+/* Header for web styling ends */
+
+/* Header for mobile */
+
+@media screen and (max-width : 768px){
+    body{
+        overflow: hidden;
+    }
+    header ul{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 92vh;
+        background-color:rgba(44, 53, 53, 0.5);
+        top: 100%;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+     }
+     header ul li{
+        list-style: none;
+        opacity: 0;
+    }
+    .toggle-icon  {
+        display: block;
+        margin-right: 2em;
+        cursor: pointer;
+    }
+}
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
