@@ -14,7 +14,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    background-color: red;
+    background-color:;
     min-height: 8vh;
     position: absolute;
 }
@@ -51,9 +51,7 @@ header ul li a:hover{
     border-radius: 3px;
 }
 
-/* Header for web styling ends */
 
-/* Header for mobile */
 
 @media screen and (max-width : 768px){
     body{
@@ -64,12 +62,15 @@ header ul li a:hover{
         position: absolute;
         flex-direction: column;
         justify-content: space-around;
-        height: 92vh;
+        height: 80vh;
+        margin-top: 6vh;
         background-color:rgba(44, 53, 53, 0.5);
         top: 100%;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
+        width: 80%;
+        transform: translateX(-12%);
+        transition: 0.5s ease-in;
+        opacity: 0;
+        border-radius: 1rem;
      }
      header ul li{
         list-style: none;
@@ -82,7 +83,7 @@ header ul li a:hover{
     }
 }
 .nav-active{
-    transform: translateX(0%);
+    opacity: 1;
 }
 
 @keyframes navLinkFade{
@@ -95,3 +96,19 @@ header ul li a:hover{
         transform: translateX(0px);
     }
 }
+
+/* Header for web styling ends */
+
+/* Hero bg design  starts*/
+main{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main .left-section{
+    
+}
+
+/* Hero bg design  ends*/
