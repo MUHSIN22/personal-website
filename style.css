@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,200;1,400&display=swap');
 
+/* Color varibles declaration starts*/
+:root {
+    --primaryColor: #F3CA20;
+}
+/* Color variable declaration ends */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -14,7 +20,6 @@ header {
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    background-color:;
     min-height: 8vh;
     position: absolute;
 }
@@ -32,7 +37,7 @@ header ul li{
 header ul li a{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    color: #F3CA20;
+    color: var(--primaryColor);
     transition: 0.7s ease-in-out;
     font-size: large;
 }
@@ -46,7 +51,7 @@ header ul li a:hover{
 .toggle-icon div {
     width: 25px;
     height: 4px;
-    background-color: #F3CA20;
+    background-color: var(--primaryColor);
     margin: 4px;
     border-radius: 3px;
 }
@@ -64,7 +69,7 @@ header ul li a:hover{
         justify-content: space-around;
         height: 80vh;
         margin-top: 6vh;
-        background-color:rgba(44, 53, 53, 0.5);
+        background-color:rgba(19, 17, 17, 0.9);
         top: 100%;
         width: 80%;
         transform: translateX(-12%);
@@ -104,11 +109,70 @@ main{
     background-color: black;
     height: 100vh;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    overflow: hidden;
 }
 main .left-section{
-    
+    color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
 }
-
+main .left-section .left-section-container{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+main .left-section h1{
+    font-weight: bold;
+}
+main .left-section h6{
+    color: var(--primaryColor);
+}
+main .left-section .subtext{
+    letter-spacing: 1.7px;
+}
+main .left-section .readmore a{
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+main .left-section .readmore a h6, main .left-section .readmore a i{
+    font-weight: lighter;
+    letter-spacing: 5px;
+    color: white;
+    opacity: 0.5;
+}
+main .right-section{
+    background-color: black;
+    width: 50%;
+    height: 100vh;
+    background-image: url(./Images/hack.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+@media screen and (max-width : 768px){
+    main{
+        background-color: black;
+        height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        overflow: hidden;
+    }
+    main .left-section h1{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    main .left-section h6{
+        letter-spacing: 0;
+        font-size: 11px;
+    }
+}
 /* Hero bg design  ends*/
