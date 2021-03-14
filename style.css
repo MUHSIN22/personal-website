@@ -105,6 +105,33 @@ header ul li a:hover{
 
 /* Header for web styling ends */
 
+/* to top starts */
+
+.top .icon{
+    position: fixed;
+    bottom: 3px;
+    right: 3px;
+    color: black;
+    background-color: var(--blackSoft);
+    width: 36px;
+    height: 27px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+}
+    .top .icon i{
+    color: var(--secondaryColor);
+}
+@media screen and (max-width:768px){
+    .top .icon{
+        width: 25px;
+    }
+}
+/* To top ens */
+
 /* Hero bg design  starts*/
 main{
     background-color: black;
@@ -112,6 +139,7 @@ main{
     display: flex;
     align-items: center;
     overflow: hidden;
+    z-index: 2;
 }
 main .left-section{
     color: blanchedalmond;
@@ -432,6 +460,7 @@ main .right-section{
     margin-top: 3em;
     width: 60%;
     padding-top: 3em;
+    padding-bottom: 3em;
     border-radius: 20px;
     box-shadow:0.2px 0.2px 10px rgba(19, 17, 17, 0.1);
 }
@@ -486,6 +515,64 @@ footer{
     margin-bottom: 0;
     display: flex;
     color: var(--secondaryColor);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7em;
 }
-
+footer .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-top: 3em;
+}
+footer .details .connect-head h6{
+    font-size: larger;
+    font-weight: bold;
+}
+footer .details .connect{
+    display: flex;
+    justify-content: space-between;
+}
+footer .details .connect i{
+    font-size: 33px;
+}
+footer .details .connect .github i{
+    color: white;
+}
+footer .details .connect .github i:hover{
+    color: rgb(224, 224, 224);
+}
+footer .details .connect .instagram i{
+    color: rgb(200, 21, 117);
+}
+footer .details .connect .instagram i:hover{
+    color: rgb(131, 26, 82);
+}
+footer .details .footer-left-section p a{
+    text-decoration: none;
+    color: var(--secondaryColor);
+}
+footer .copyright {
+    margin-top: 2em;
+    opacity: .5;
+}
+footer span i{
+    color: #F3CA20;
+}
+@media screen and (max-width:768px){
+    footer .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        margin-top: 3em;
+        text-align: center;
+    }
+    footer .footer-right-section{ 
+        margin-top: 1em;
+    }
+}
 /* Footer section ends */

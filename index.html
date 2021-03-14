@@ -24,10 +24,10 @@
     <header>
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">Skill</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="toggle-icon">
         <div class="line1"></div>
@@ -35,7 +35,15 @@
         <div class="line3"></div>
       </div>
     </header>
-
+    <!-- to top icon -->
+    <div class="top">
+      <a href="#">
+      <div class="icon">
+        <i class="fas fa-level-up-alt"></i>
+      </div>
+      </a>
+    </div>
+    <!-- to top icon -->
     <!-- Header ends -->
     <!-- Hero backgrounds starts -->
 
@@ -68,7 +76,7 @@
       <div class="service-head">
         <h1>Service providing</h1>
       </div>
-      <div class="service-container">
+      <div class="service-container" id="service">
         <div class="card">
           <div class="heading">
             <h4>Web developing</h4>
@@ -128,7 +136,7 @@
 
     <!-- Reason code starts -->
 
-    <section class="reason-area">
+    <section class="reason-area" id="skill">
       <div class="reason-head">
         <h1>Reason to choose me!</h1>
       </div>
@@ -178,7 +186,7 @@
 
     <!-- About code starts -->
 
-    <section class="about-section">
+    <section class="about-section" id="about">
       <div class="about-head">
         <h1>About me</h1>
       </div>
@@ -217,7 +225,7 @@
           ></textarea>
         </div>
         <div class="form-submit">
-          <input type="submit" />
+          <input type="submit" value="Submit"/>
         </div>
       </form>
     </section>
@@ -227,21 +235,21 @@
     <footer>
       <div class="details">
         <div class="footer-left-section">
-          <p>Muhsin Neyyathur <br><span></span>Location <br> muhsinny333@gmail.com</p>
+          <p>Muhsin Neyyathur <br><a href="#"><span><i class="fas fa-map-marker-alt"></i></span>Location</a> <br> muhsinny333@gmail.com</p>
         </div>
         <div class="footer-right-section">
           <div class="connect-head">
             <h6>Connect me.</h6>
           </div>
-          <div class="connect">
-            <div class="instagram">
-              <a href="#"><i class="fab fa-instagram-square"></i></a>
-            </div>
+          <div class="connect" id="contact">
             <div class="linkedin">
-              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <div class="github">
-              <i class="fab fa-github-square"></i>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="instagram">
+              <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
         </div>
