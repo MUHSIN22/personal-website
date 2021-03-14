@@ -204,6 +204,7 @@ main .right-section{
         flex-direction: column-reverse;
         align-items: center;
         overflow: hidden;
+        padding-bottom: 3em;
     }
     main .left-section h1{
         font-weight: bold;
@@ -425,7 +426,7 @@ main .right-section{
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    background-image: url(./Images/fixedwrap.jpg);
+    background-image: url(./Images/fixedwrap-min.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
