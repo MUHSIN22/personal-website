@@ -227,20 +227,43 @@ main .right-section{
 }
 .service-area .service-container {
     display: flex ;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     padding-top: 5em;
 }
 .service-area .service-container .card {
     width: 25rem;
-    height: 18rem;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin: 4em;
     padding: 2em;
     border: none;
     border-radius: 20px;
     box-shadow: 2px 2px 20px rgba(19, 17, 17, 0.1);
 }
-
+.service-area .service-container .card .icon .fa-code{
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+    color: rgb(224, 146, 0);
+}
+.service-area .service-container .card .icon .fa-users-cog{
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+    color: rgb(16, 16, 156);
+}
+.service-area .service-container .card .icon .fa-pen{
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+    color: rgb(190, 55, 21);
+}
+.service-area .service-container .card .icon .fa-paint-brush{
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+    color: rgb(149, 66, 105);
+}
 
 .service-area .service-container .card .paragraph {
     display: flex;
