@@ -207,10 +207,12 @@ main .right-section{
     }
     main .left-section h1{
         font-weight: bold;
-        font-size: 20px;
+        font-size: 15px;
     }
     main .left-section h6{
-        letter-spacing: 0;
+        letter-spacing: 2px;
+        opacity: 0.8;
+        font-weight: lighter;
         font-size: 11px;
     }
 }
@@ -289,7 +291,7 @@ main .right-section{
 }
 @media screen and (max-width:768px) {
     .service-area .service-container .card {
-        width: 22em;
+        width: 18em;
         margin: 1em;
         padding: 2em;
         border: none;
@@ -399,9 +401,16 @@ main .right-section{
         align-items: center;
         width: 100%;
     }    
+    .reason-up,.reason-down{
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .reason-area .reason-container .card {
         height: 10.5em;
-        width: 22.5em;
+        width: 95%;
         margin-top: 2em;
     }
 }
@@ -439,8 +448,8 @@ main .right-section{
         font-size: 1em;
     }
     .about-section {
-        padding-left: 5em;
-        padding-right: 5em;
+        padding-left: 2em;
+        padding-right: 2em;
     }
 }
 
