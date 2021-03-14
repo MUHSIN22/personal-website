@@ -230,6 +230,7 @@ main .right-section{
 }
 .service-area .service-container .card {
     width: 25rem;
+    height: 18rem;
     margin: 4em;
     padding: 2em;
     border: none;
@@ -264,6 +265,9 @@ main .right-section{
 }
 @media screen and (max-width:1200px){
     .service-area .service-container .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: 25rem;
         margin: 2em;
         padding: 2em;
