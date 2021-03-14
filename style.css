@@ -70,7 +70,7 @@ header ul li a:hover{
         justify-content: space-around;
         height: 80vh;
         margin-top: 6vh;
-        background-color:rgba(19, 17, 17, 0.9);
+        background-color:rgb(19, 17, 17);
         top: 100%;
         width: 80%;
         transform: translateX(-12%);
@@ -161,6 +161,7 @@ main .left-section h1{
 }
 main .left-section h6{
     color: var(--primaryColor);
+    letter-spacing: 3.2px;
 }
 main .left-section .subtext{
     letter-spacing: 1.7px;
@@ -212,7 +213,7 @@ main .right-section{
     }
     main .left-section h6{
         letter-spacing: 2px;
-        opacity: 0.8;
+        opacity: 0.5;
         font-weight: lighter;
         font-size: 11px;
     }
@@ -257,11 +258,13 @@ main .right-section{
 .service-area .service-container .card .icon .fa-pen{
     font-size: 3rem;
     margin-bottom: 0.5em;
+    margin-top: -1em;
     color: rgb(190, 55, 21);
 }
 .service-area .service-container .card .icon .fa-paint-brush{
     font-size: 3rem;
     margin-bottom: 0.5em;
+    margin-top: -1em;
     color: rgb(149, 66, 105);
 }
 
