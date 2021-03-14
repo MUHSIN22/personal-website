@@ -454,6 +454,7 @@ main .right-section{
     justify-content: center;
     background-color: var(--secondaryColor);
     padding-top: 3em;
+    padding-bottom: 7em;
 }
 .subscribe-section .subscribe-box {
     display: flex;
@@ -522,7 +523,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 7em;
+    
 }
 footer .details {
     display: flex;
