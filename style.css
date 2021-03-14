@@ -291,7 +291,7 @@ main .right-section{
 }
 @media screen and (max-width:768px) {
     .service-area .service-container .card {
-        width: 18em;
+        width: 100%;
         margin: 1em;
         padding: 2em;
         border: none;
