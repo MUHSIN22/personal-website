@@ -195,20 +195,20 @@
 
     <!-- Subscribe section starts -->
     <section class="subscribe-section">
-      <form class="subscribe-box">
+      <form class="subscribe-box" method="POST" action="https://formspree.io/f/xbjpnzvy">
         <div class="subscribe-head">
           <h3>Enquire</h3>
         </div>
 
         <div class="name">
-          <input type="text" placeholder="Enter your name..." />
+          <input type="text" placeholder="Enter your name..." name="name"/>
         </div>
         <div class="email">
-          <input type="email" placeholder="Enter your email..." />
+          <input type="email" placeholder="Enter your email..." name="_replyto">
         </div>
         <div class="expectation">
           <textarea
-            name="need"
+            name="message"
             id="need"
             placeholder="What are you expect from me?"
             rows="3"
